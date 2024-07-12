@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import category from "./category"; // Assuming the category model is in the same directory
 
 const productSchema = new mongoose.Schema({
     name: {
