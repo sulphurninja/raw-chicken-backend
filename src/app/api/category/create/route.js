@@ -8,6 +8,7 @@ connectDB();
 export async function POST(request) {
     try {
         // Parse the JSON body from the request
+        const body = await request.json();
         const { name, image } = data;
         if (!name || !image) {
             return NextResponse.json({ error: "Name and image are required" }, { status: 400 });
